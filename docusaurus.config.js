@@ -10,7 +10,7 @@ const config = {
   tagline: 'gopsutil的文档',
   url: 'https://gopsutil-doc.vercel.app/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
