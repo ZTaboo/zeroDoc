@@ -4,27 +4,25 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Go版本的psutil',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        用于系统信息的监测与获取
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '跨平台',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        多平台编译
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '我也不知道它有啥优势了',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
