@@ -67,11 +67,6 @@ const config = {
             position: 'right',
             label: 'zeroDoc',
           },
-          // {
-          //   to: '/blog',
-          //   label: '博客',
-          //   position: 'right',
-          // },
           {
             href: 'https://github.com/ZTaboo/zeroDoc',
             label: 'GitHub',
