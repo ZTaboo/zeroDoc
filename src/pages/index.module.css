@@ -2,7 +2,17 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
+html,
+body,
+#__docusaurus {
+  height: 100%;
+  width: 100%;
+}
+.zero {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -20,4 +30,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero {
+  background-color: #0f1a31;
+}
+
+.box {
+  display: flex;
+  height: calc(100vh - 90px - 60px);
+  width: 100%;
+}
+
+.left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.right{
+  width: 50%;
+  background: url('/static/img/homeBanner.png') no-repeat center center;
+}
+
+.font{
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.leftCon{
+  color: #565451;
+  font-size: 1.5rem;
 }
