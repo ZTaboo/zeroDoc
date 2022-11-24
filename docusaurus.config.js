@@ -54,7 +54,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       navbar: {
+        hideOnScroll: true,
         title: 'ZeroDoc',
         logo: {
           alt: 'ZeroDoc',
@@ -66,6 +73,11 @@ const config = {
             docId: 'index',
             position: 'right',
             label: 'zeroDoc',
+          },
+          {
+            to: '/gist',
+            position: 'right',
+            label: 'Gist',
           },
           {
             href: 'https://github.com/ZTaboo/zeroDoc',
