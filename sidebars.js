@@ -10,25 +10,6 @@
  */
 
 // @ts-check
-var fs = require("fs");
-var path = require("path");
-var list = [];
-function listFile(dir){
-	var arr = fs.readdirSync(dir);
-	arr.forEach(function(item){
-		var fullpath = path.join(dir,item);
-		var stats = fs.statSync(fullpath);
-		if(stats.isDirectory()){
-			listFile(fullpath);
-		}else{
-			let tmp = fullpath.substring(46,fullpath.length)
-			list.push(tmp);
-		}
-	});
-	return list;
-}
- 
-var res = listFile("/home/zero/Desktop/Data/zero/gopsutilDoc/docs/gopsutil");
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
