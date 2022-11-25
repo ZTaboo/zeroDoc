@@ -3,7 +3,7 @@ export const get = (urlPath, queryData) => {
     method: 'GET',
     headers: {
       Accept: 'application/vnd.github+json',
-      Authorization: 'Bearer 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',
+      Authorization: 'Bearer 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',
     },
   }).then((r) => {
     return r.json();
