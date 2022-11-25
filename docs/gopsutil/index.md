@@ -19,14 +19,16 @@ go get github.com/shirou/gopsutil/v3
 
 ## 目录说明
 
+>   文档完善进度
+
 -   [x] `cpu` 获取CPU相关信息
--   [ ] `disk` 获取硬盘相关信息
+-   [x] `disk` 获取硬盘相关信息
 -   [ ] `docker` 获取Docker相关信息
 -   [x] `host` 获取主机相关信息
 -   [x] `mem` 获取内存相关信息
 -   [ ] `net` 获取网卡相关信息
--   [ ] `process` 获取进程相关信息
--   [ ] `load` 可能是系统杂项信息
+-   [x] `process` 获取进程相关信息
+-   [x] `load` 可能是系统杂项信息
 -   [ ] `winservices` Windows 服务相关
 
 ```go

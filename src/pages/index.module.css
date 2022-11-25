@@ -26,6 +26,63 @@ body,
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .right {
+    width: 50%;
+    background: url('/static/img/homeBanner.png') no-repeat center center;
+  }
+  .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .right {
+    display: none;
+    width: 50%;
+    background: url('/static/img/homeBanner.png') no-repeat center center;
+  }
+
+  .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .right {
+    display: none;
+    width: 50%;
+    background: url('/static/img/homeBanner.png') no-repeat center center;
+  }
+  .font {
+    display: none;
+    font-size: 60px;
+    font-weight: 800;
+  }
+  .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.font {
+  font-size: 60px;
+  font-weight: 800;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -42,25 +99,7 @@ body,
   width: 100%;
 }
 
-.left{
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.right{
-  width: 50%;
-  background: url('/static/img/homeBanner.png') no-repeat center center;
-}
-
-.font{
-  font-size: 60px;
-  font-weight: 800;
-}
-
-.leftCon{
+.leftCon {
   color: #565451;
   font-size: 1.5rem;
 }

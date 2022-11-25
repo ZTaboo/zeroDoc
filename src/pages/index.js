@@ -5,29 +5,14 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import 'antd/dist/reset.css';
 import styles from './index.module.css';
-
-// function HomepageHeader() {
-//   const { siteConfig } = useDocusaurusContext();
-//   return (
-//     <header className={clsx('hero--primary', styles.heroBanner, styles.hero)}>
-//       <div className="container">
-//         <h1 className="hero__title" style={{ color: 'white' }}>
-//           {siteConfig.title}
-//         </h1>
-//         <p className="hero__subtitle" style={{ color: 'white' }}>
-//           {siteConfig.tagline}
-//         </p>
-//         <div className={styles.buttons}>
-//           <Link className="button button--secondary button--lg" to="/docs">
-//             立即开始
-//           </Link>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
+import { Button } from 'antd';
+import { useHistory } from '@docusaurus/router';
 
 function HomepageFeatures() {
+  const history = useHistory();
+  const toDocs = () => {
+    history.push('/docs');
+  };
   return (
     <div className={styles.box}>
       <div className={styles.left}>
@@ -38,9 +23,9 @@ function HomepageFeatures() {
             <br />
             在这里记录知识，希望对你也有帮助。
           </p>
-          <Link className="button button--secondary button--lg" to="/docs">
-            立即开始
-          </Link>
+          <div className={styles.buttonBox}>
+            <Button onClick={toDocs}>立即开始</Button>
+          </div>
         </div>
       </div>
       <div className={styles.right}></div>
