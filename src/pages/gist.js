@@ -28,11 +28,13 @@ export default function gist() {
     });
   }, []);
   const nextPage = () => {
+    setApiStatus(false);
     let thisPage = localStorage.getItem('page');
     get('https://api.github.com/users/ZTaboo/gists', {
       per_page: 10,
       page: Number(thisPage) + 1,
     }).then((r) => {
+      setApiStatus(true);
       if (r.length <= 0) {
         message.warning('当前是最后一页数据');
       } else {
@@ -47,6 +49,7 @@ export default function gist() {
     });
   };
   const upPage = () => {
+    setApiStatus(false);
     let thisPage = localStorage.getItem('page');
     if (thisPage !== '1') {
       get('https://api.github.com/users/ZTaboo/gists', {
@@ -68,6 +71,7 @@ export default function gist() {
     } else {
       message.warning('当前是第一页');
     }
+    setApiStatus(true);
   };
   const initPage = () => {
     localStorage.setItem('page', 1);
@@ -79,9 +83,13 @@ export default function gist() {
       message.info('请求可能稍慢，如果访问失败请检查是否可以访问gist');
       localStorage.setItem('info', 'true');
     }
-    get('https://api.github.com/gists/' + id).then((r) => {
-      setContent(r.files[fileName].content);
-    });
+    get('https://api.github.com/gists/' + id)
+      .then((r) => {
+        setContent(r.files[fileName].content);
+      })
+      .catch((e) => {
+        console.log('catch:', e);
+      });
   };
   return (
     <>
@@ -94,7 +102,14 @@ export default function gist() {
           setContent('');
         }}
       >
-        <Input.TextArea autoSize value={content}></Input.TextArea>
+        <div style={{ marginBottom: '50px' }}>
+          <Input.TextArea
+            bordered={false}
+            showCount
+            autoSize={{ minRows: 5, maxRows: 20 }}
+            value={content}
+          ></Input.TextArea>
+        </div>
       </Modal>
       <Layout title={`Zero Doc`} description="Zero Doc">
         {!apiStatus ? (
