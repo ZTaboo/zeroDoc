@@ -19,7 +19,7 @@ go get github.com/shirou/gopsutil/v3
 
 ## 目录说明
 
->   文档完善进度
+>   文档完善进度，未完成部分因未使用到，如有需要github提issue立即新增~
 
 -   [x] `cpu` 获取CPU相关信息
 -   [x] `disk` 获取硬盘相关信息
