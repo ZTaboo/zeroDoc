@@ -1,0 +1,11 @@
+{
+  "userIgnoreFilters": [
+    "01.assets/",
+    "02.template/"
+  ],
+  "attachmentFolderPath": "01.assets",
+  "newLinkFormat": "relative",
+  "promptDelete": false,
+  "showFrontmatter": true,
+  "showLineNumber": true
+}
