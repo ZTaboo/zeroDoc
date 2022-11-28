@@ -1,5 +1,5 @@
 ---
-title: Go命令解析1
+title: Go命令解析
 description: Go命令解析
 tags: 
   - golang
