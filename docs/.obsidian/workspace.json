@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "gopsutil/01.mem.md",
+                "file": "gopsutil/04.process.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "gopsutil/01.mem.md",
+                "file": "gopsutil/04.process.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "gopsutil/01.mem.md",
+                "file": "gopsutil/04.process.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "gopsutil/01.mem.md"
+                "file": "gopsutil/04.process.md"
               }
             }
           }
@@ -138,15 +138,15 @@
   },
   "active": "1328d7f9ba52083d",
   "lastOpenFiles": [
-    "02.template/_docs-title.md",
+    "gopsutil/06.disk.md",
+    "gopsutil/05.load.md",
+    "gopsutil/02.cpu.md",
     "gopsutil/01.mem.md",
+    "02.template/_docs-title.md",
     "02.template/_blog-title.md",
     "gopsutil/04.process.md",
     "系统杂记/test.md",
     "01.assets/Pasted image 20221127103018.png",
-    "未命名.md",
-    "gopsutil/06.disk.md",
-    "gopsutil/02.cpu.md",
-    "系统杂记/meminfo详解.md"
+    "未命名.md"
   ]
 }
