@@ -7,5 +7,7 @@
   "newLinkFormat": "relative",
   "promptDelete": false,
   "showFrontmatter": true,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true
 }
