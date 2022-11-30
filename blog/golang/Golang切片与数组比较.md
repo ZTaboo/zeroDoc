@@ -1,6 +1,6 @@
 ---
-title: Golang切片与数组
-description: Golang切片与数组
+title: Golang切片与数组比较
+description: Golang切片与数组比较
 tags: 
   - golang
 ---
@@ -66,7 +66,6 @@ func main() {
 main.go:8:10: invalid operation: a == b (mismatched types [1]int and [2]int)
 ```
 > 结论：
-> 
-> 数组的长度是类型的一部分，因此长度不相同的数组是不相同的。
-> 
-> 如果长度相同，则会按照内容
+
+1. 数组可以比较，但前提是长度相同。数组的长度是类型的一部分，因此长度不相同的数组是不相同的。如果长度相同，则会按照内容对比
+2. 切片不可以比较
