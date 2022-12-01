@@ -133,7 +133,7 @@ func main() {
 ```
 > output:
 
-```text
+```bash
 slice1:[0 1 2 3 4 5 6 7 8 9],pointer:0xc0000ac0f0,cap:10,len:10
 slice2:[2 3 4],pointer:0xc0000ac100,cap:8,len:3
 slice3:[2 3 4 100],pointer:0xc0000ac100,cap:8,len:4

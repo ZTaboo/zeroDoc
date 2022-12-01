@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "golang/defer 埋坑：切片容量的创建.md",
+                "file": "golang/Go切片的开闭原则与小坑.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "golang/defer 埋坑：切片容量的创建.md"
+                "file": "golang/Go切片的开闭原则与小坑.md"
               }
             }
           },
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "golang/defer 埋坑：切片容量的创建.md",
+                "file": "golang/Go切片的开闭原则与小坑.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "golang/defer 埋坑：切片容量的创建.md",
+                "file": "golang/Go切片的开闭原则与小坑.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,6 +152,7 @@
   "active": "b509091810909731",
   "lastOpenFiles": [
     "golang/Golang切片与数组比较.md",
+    "golang/defer 埋坑：切片容量的创建.md",
     "golang/Go切片的开闭原则与小坑.md",
     "杂记/Win下载文件打开很卡.md",
     "Pasted image 20221129223948.png",
@@ -159,7 +160,6 @@
     "02.template/_blog-template.md",
     "golang/关于defer.md",
     "index.md",
-    "golang/golang.md",
-    "golang/golang_1.md"
+    "golang/golang.md"
   ]
 }
