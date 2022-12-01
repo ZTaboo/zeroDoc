@@ -13,19 +13,12 @@ package main
 import "fmt"
 
 func main() {
-
-    slice1 := [...]int{1, 2, 3, 4, 5}
-
+	slice1 := [...]int{1, 2, 3, 4, 5}
     fmt.Println(cap(slice1), len(slice1))
-
     slice2 := []int{1, 2, 3, 4, 5}
-
     fmt.Println(cap(slice2), len(slice2))
-
     slice2 = append(slice2, 6)
-
     fmt.Println(cap(slice2), len(slice2))
-
 }
 ```
 > 输出：
@@ -43,7 +36,9 @@ func main() {
 3. 切片的长度和容量是不一定一致的，容量是根据初始切片长度来翻倍递增的
 
 ### 引申1
+
 `[1]int`和 `[2]int` 是同样类型么？
+
 ```go
 package main
 
